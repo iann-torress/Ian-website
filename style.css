@@ -1,0 +1,9 @@
+#footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer-nav li {
+    right: 300px;
+}
