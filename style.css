@@ -1,9 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page-container {
+    display: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 15px;
+}
+
+body {
+    height: 100vh;
+}
+
+/* SIDEBAR */
+
+#sidebar-container {
+    width: 120px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+/* FOOTER DESIGN */
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
 #footer-nav {
     list-style: none;
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+}
+
+footer h2 {
     display: flex;
     justify-content: flex-end;
 }
 
+#footer-name {
+    font-size: 20px;
+}
+
 #footer-nav li {
-    right: 300px;
+    padding: 0px 10px;
 }
