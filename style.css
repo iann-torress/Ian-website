@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    /* overflow-y: hidden; */
+}
+
 #page-container {
     display: relative;
     min-height: 100vh;
@@ -54,32 +58,32 @@ header h1 {
 }
 
 #sidebar-container nav {
-    width: 121px;
+    width: 150px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 25px;
 }
 
 #sidebar-container nav a {
-    height: 121px;
     display: flex;
+    height: 32px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 nav a {
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;   
     text-decoration: none;
     color: black;
 }
 
 #sidebar-container nav a:hover {
     text-decoration: underline;
-    font-size: 35px;
+    font-size: 27px;
     transition: font-size 1s;
 }
 
@@ -88,19 +92,36 @@ nav a:hover {
 }
 
 #sidebar-container ul {
-    list-style: none;
     display: grid;
-    grid-template-columns: 121px;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 100px;
-    width: 121px;
+    row-gap: 175px;
+    width: 32px;
 }
 
 #sidebar-container li {
     rotate: -90deg;
     display: flex;
     justify-content: center;
+    width: 32px;
 }
+
+/* GALLERY */
+#gallery-container {
+    padding-left: 140px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-items: center;
+    height: 90vh;
+}
+
+/* #gallery-container #images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* #gallery-container img {
+    height: 10%;
+} */
 
 /* FOOTER DESIGN */
 
@@ -129,7 +150,10 @@ footer h2 {
 }
 
 #footer-name {
-    font-size: 15px;
+    font-size: 13px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #footer-nav li {
